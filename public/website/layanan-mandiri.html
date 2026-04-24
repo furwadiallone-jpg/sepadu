@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Mandiri - Desa Sepadu</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="nav-logo">
+                    <img src="../aset/Logo-Kab-Sambas.png" alt="Logo Sambas">
+                    <span>PEMERINTAH DESA SEPADU</span>
+                </div>
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Profil Desa</a></li>
+                    <li class="dropdown">
+                        <a href="#">Pemerintahan Desa</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="aparatur.html">Aparatur Desa</a></li>
+                            <li><a href="#">Struktur Organisasi</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="layanan.html">Pelayanan</a></li>
+                    <li><a href="lapak.html">Lapak</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="berita.html">Berita</a></li>
+                    <li><a href="berita-detail.html">Informasi</a></li>
+                    <li><a href="layanan-mandiri.html" class="active">Layanan Mandiri</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="hero-secondary">
+        <div class="hero-overlay-secondary">
+            <h1>Layanan Mandiri</h1>
+            <p>Informasi Layanan Publik Desa Sepadu</p>
+        </div>
+    </section>
+    <section class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a> / <span>Layanan Mandiri</span>
+        </div>
+    </section>
+    <section class="layanan-mandiri-main">
+        <div class="container">
+            <div class="layanan-wrapper">
+                <section class="jadwal-sholat-section">
+                    <h2>Jadwal Sholat Kabupaten Sambas</h2>
+                    <p class="subtitle">Data Terkini Waktu Sholat Maklum Tahun 2026</p>
+                    
+                    <div class="sholat-today">
+                        <div class="today-header">
+                            <span id="current-date"></span>
+                        </div>
+                        <div class="sholat-grid">
+                            <div class="sholat-card">
+                                <div class="sholat-name">SUBUH</div>
+                                <div class="sholat-time" id="subuh-time">04:30</div>
+                            </div>
+                            <div class="sholat-card">
+                                <div class="sholat-name">TERBIT</div>
+                                <div class="sholat-time" id="terbit-time">06:05</div>
+                            </div>
+                            <div class="sholat-card">
+                                <div class="sholat-name">DZUHUR</div>
+                                <div class="sholat-time" id="dzuhur-time">12:15</div>
+                            </div>
+                            <div class="sholat-card">
+                                <div class="sholat-name">ASAR</div>
+                                <div class="sholat-time" id="asar-time">15:35</div>
+                            </div>
+                            <div class="sholat-card">
+                                <div class="sholat-name">MAGHRIB</div>
+                                <div class="sholat-time" id="maghrib-time">18:30</div>
+                            </div>
+                            <div class="sholat-card">
+                                <div class="sholat-name">ISYA</div>
+                                <div class="sholat-time" id="isya-time">19:50</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sholat-table">
+                        <h3>Jadwal Sholat Bulan Ini</h3>
+                        <table class="sholat-schedule">
+                            <thead>
+                                <tr>
+                                    <th>Tanggal</th>
+                                    <th>Subuh</th>
+                                    <th>Dzuhur</th>
+                                    <th>Asar</th>
+                                    <th>Maghrib</th>
+                                    <th>Isya</th>
+                                </tr>
+                            </thead>
+                            <tbody id="sholat-table-body">
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section class="layanan-publik">
+                    <h2>Layanan Publik Desa Sepadu</h2>
+                    
+                    <div class="layanan-cards">
+                        <div class="layanan-card">
+                            <div class="layanan-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <h3>Surat Keterangan</h3>
+                            <p>Layanan pembuatan surat keterangan domisili, kematian, kelahiran, dan lainnya.</p>
+                            <a href="#" class="btn-layanan">Ajukan Permohonan</a>
+                        </div>
+                        <div class="layanan-card">
+                            <div class="layanan-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <h3>Izin Usaha</h3>
+                            <p>Bantuan perizinan usaha kecil dan menengah di desa.</p>
+                            <a href="#" class="btn-layanan">Ajukan Permohonan</a>
+                        </div>
+                        <div class="layanan-card">
+                            <div class="layanan-icon">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <h3>Bantuan Sosial</h3>
+                            <p>Informasi dan pendaftaran bantuan sosial untuk keluarga kurang mampu.</p>
+                            <a href="#" class="btn-layanan">Ajukan Permohonan</a>
+                        </div>
+                        <div class="layanan-card">
+                            <div class="layanan-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>Beasiswa</h3>
+                            <p>Program beasiswa untuk siswa berprestasi dari keluarga kurang mampu.</p>
+                            <a href="#" class="btn-layanan">Ajukan Permohonan</a>
+                        </div>
+                        <div class="layanan-card">
+                            <div class="layanan-icon">
+                                <i class="fas fa-hospital"></i>
+                            </div>
+                            <h3>Kesehatan</h3>
+                            <p>Informasi layanan kesehatan dan program vaksinasi di desa.</p>
+                            <a href="#" class="btn-layanan">Selengkapnya</a>
+                        </div>
+                        <div class="layanan-card">
+                            <div class="layanan-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h3>Pendidikan</h3>
+                            <p>Program pendidikan dan pelatihan untuk pengembangan SDM desa.</p>
+                            <a href="#" class="btn-layanan">Selengkapnya</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="kontak-lokasi">
+                    <h2>Kontak & Lokasi</h2>
+                    
+                    <div class="kontak-wrapper">
+                        <div class="kontak-info">
+                            <h3>Informasi Kontak</h3>
+                            <div class="kontak-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Alamat</h4>
+                                    <p>Jalan Semparuk NO 1031, Desa Sepadu, Kecamatan Semparuk, Kabupaten Sambas, Kalimantan Barat</p>
+                                </div>
+                            </div>
+                            <div class="kontak-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Telepon</h4>
+                                    <p>0812-345-6789</p>
+                                </div>
+                            </div>
+                            <div class="kontak-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>sepadusemparuk@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="kontak-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h4>Jam Kerja</h4>
+                                    <p>Senin - Jumat: 08:00 - 13:00<br>Sabtu - Minggu: Tutup</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="peta-lokasi">
+                            <h3>Peta Lokasi</h3>
+                            <div id="map" class="map-container"></div>
+                            <p class="map-note">Peta menunjukkan lokasi Kantor Desa Sepadu</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../aset/Logo-Kab-Sambas.png" alt="Logo">
+                        <p>Website Informasi Desa Sepadu, Kecamatan Semparuk, Kabupaten Sambas</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Pelayaran Sepadu</h4>
+                    <div class="contact-info">
+                        <p><strong>Jalan</strong>: Jalan Dusun Seladu Rt.002 - Rw.001, Desa Sepadu, Kecamatan Semparuk, Kabupaten Sambas, Provinsi Kalimantan Barat, Indonesia, 79457.</p>
+                        <p><strong>Email</strong>: sepadusemparuk@gmail.com</p>
+                        <p><strong>Telepon</strong>: 083127246351</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Copyright © 2026 Pemrintah. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Furwadi</a>
+                    <a href="#">2026</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGiLGNW8JfViBhOlnHdJukjBvj6SgF_-o"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/jadwal-sholat.js"></script>
+</body>
+</html>

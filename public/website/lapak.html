@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="nav-logo">
+                    <img src="../aset/Logo-Kab-Sambas.png" alt="Logo Sambas">
+                    <span>PEMERINTAH DESA SEPADU</span>
+                </div>
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Profil Desa</a></li>
+                    <li class="dropdown">
+                        <a href="#">Pemerintahan Desa</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="aparatur.html">Aparatur Desa</a></li>
+                            <li><a href="#">Struktur Organisasi</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="layanan.html">Pelayanan</a></li>
+                    <li><a href="lapak.html"class="active">Lapak</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="berita.html">Berita</a></li>
+                    <li><a href="berita-detail.html">Informasi</a></li>
+                    <li><a href="layanan-mandiri.html">Layanan Mandiri</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="hero">
+        <img src="../aset/header-umkm 1.png" alt="Desa Sepadu" class="hero-bg">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Lapak UMKM Desa Sepadu</h1>
+                <div class="hero-search">
+                    <input type="text" placeholder="Cari...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <title>Lapak di Desa Sepadu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            color: #2c5f4f;
+            margin: 60px 0 20px;
+            font-weight: 600;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 40px 0;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .tab {
+            padding: 10px 0;
+            cursor: pointer;
+            color: #999;
+            font-size: 14px;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .tab.active {
+            color: #2c5f4f;
+            border-bottom-color: #2c5f4f;
+        }
+
+        .lapak-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .lapak-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .lapak-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .lapak-image {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            background-color: #e0e0e0;
+        }
+
+        .lapak-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .lapak-content {
+            padding: 20px;
+        }
+
+        .lapak-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .lapak-description {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <section class="about-umkm">
+        <div class="container">
+        <h2>Tentang LAPAK UMKM Desa Sepadu</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Desa Sepadu memiliki beragam UMKM yang berkembang dengan dukungan penuh dari pemerintah desa. Produk-produk lokal kami telah tersebar ke berbagai wilayah dan mendapat kepercayaan dari konsumen.</p>
+                    <p>Kami terus mengembangkan skill dan inovasi para pengusaha lokal agar dapat bersaing di pasar yang lebih luas. Melalui website ini, kami berharap dapat memperluas jangkauan pemasaran produk UMKM kami.</p>
+                    <div class="umkm-stats">
+                        <div class="stat">
+                            <h3>25+</h3>
+                            <p>UMKM Aktif</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100+</h3>
+                            <p>Produk</p>
+                        </div>
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Pelanggan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="../aset/50fb726a1d5c7e4212ce5c9032522186.jpg" alt="UMKM">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="container">
+        <h2 class="section-title">Lapak di Desa Sepadu</h2>
+
+        <div class="tabs">
+            <div class="tab active" onclick="filterLapak('semua')">Semua</div>
+            <div class="tab" onclick="filterLapak('makanan')">Makanan</div>
+            <div class="tab" onclick="filterLapak('fashion')">Fashion</div>
+            <div class="tab" onclick="filterLapak('aksesoris')">Aksesoris</div>
+            <div class="tab" onclick="filterLapak('elektronik')">Elektronik</div>
+        </div>
+
+        <div class="lapak-grid" id="lapakGrid">
+        </div>
+    </div>
+
+    <script>
+        const lapakData = [
+            {
+                id: 1,
+                name: 'WARUNG ANDRIANA',
+                category: 'makanan',
+                image: '../aset/Rectangle 6 9.png',
+                description: 'Jalan Dukuh Mekarih Rt 002 Rt 002, Desa Sepadu, Kecamatan Teraspdu, Kabupaten Sambas, Provinsi Kalimantan Barat, Indonesia'
+            },
+            {
+                id: 2,
+                name: 'TOKO1 TAS RUTAN',
+                category: 'fashion',
+                image: '../aset/Rectangle 6 (1).png',
+                description: 'Jalan Dukuh Mekarih Rt 002 Rt 002, Desa Sepadu, Kecamatan Teraspdu, Kabupaten Sambas, Provinsi Kalimantan Barat'
+            },
+            {
+                id: 3,
+                name: 'MEBEL',
+                category: 'aksesoris',
+                image: '../aset/Rectangle 6 (2).png',
+                description: 'Jalan Dukuh Mekarih Rt 002 Rt 002, Desa Sepadu, Kecamatan Teraspdu, Kabupaten Sambas, Provinsi Kalimantan Barat'
+            },
+            {
+                id: 4,
+                name: 'TOKO BAJU',
+                category: 'aksesoris',
+                image: '../aset/Rectangle 6 (3).png',
+                description: 'Jalan Dukuh Mekarih Rt 002 Rt 002, Desa Sepadu, Kecamatan Teraspdu, Kabupaten Sambas, Provinsi Kalimantan Barat'
+            },
+            {
+                id: 5,
+                name: 'SEPATU ARRAFI',
+                category: 'fashion',
+                image: '../aset/Rectangle 6 (4).png',
+                description: 'Jalan Dukuh Mekarih Rt 002 Rt 002, Desa Sepadu, Kecamatan Teraspdu, Kabupaten Sambas, Provinsi Kalimantan Barat'
+            },
+            {
+                id: 6,
+                name: 'ARMAH PLAYSTATION',
+                category: 'elektronik',
+                image: '../aset/Rectangle 6 (5).png',
+                description: 'Jalan Dukuh Mekarih Rt 002 Rt 002, Desa Sepadu, Kecamatan Teraspdu, Kabupaten Sambas, Provinsi Kalimantan Barat'
+            },
+            {
+                id: 7,
+                name: 'BUK SITI COLLECTION',
+                category: 'fashion',
+                image: '../aset/Rectangle 6 (6).png',
+                description: 'Jalan Dukuh Mekarih Rt 002 Rt 002, Desa Sepadu, Kecamatan Teraspdu, Kabupaten Sambas, Provinsi Kalimantan Barat'
+            },
+            {
+                id: 8,
+                name: 'TOKO1 KERBAYA LAMI',
+                category: 'fashion',
+                image: '../aset/Rectangle 6.png',
+                description: 'Jalan Dukuh Mekarih Rt 002 Rt 002, Desa Sepadu, Kecamatan Teraspdu, Kabupaten Sambas, Provinsi Kalimantan Barat'
+            },
+            {
+                id: 9,
+                name: 'CEMILAN ROTI',
+                category: 'makanan',
+                image: '../aset/Rectangle 6 (7).png',
+                description: 'Jalan Dukuh Mekarih Rt 002 Rt 002, Desa Sepadu, Kecamatan Teraspdu, Kabupaten Sambas, Provinsi Kalimantan Barat'
+            },
+        ];
+
+        let currentFilter = 'semua';
+
+        function renderLapak(filter = 'semua') {
+            const grid = document.getElementById('lapakGrid');
+            grid.innerHTML = '';
+
+            const filtered = filter === 'semua' ? lapakData : lapakData.filter(item => item.category === filter);
+
+            filtered.forEach(lapak => {
+                const card = document.createElement('div');
+                card.className = 'lapak-card';
+                card.innerHTML = `
+                    <div class="lapak-image">
+                        <img src="${lapak.image}" alt="${lapak.name}">
+                    </div>
+                    <div class="lapak-content">
+                        <h3 class="lapak-title">${lapak.name}</h3>
+                        <p class="lapak-description">${lapak.description}</p>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function filterLapak(category) {
+            currentFilter = category;
+            
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            renderLapak(category);
+        }
+        renderLapak();
+    </script>
+</body>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../aset/Logo-Kab-Sambas.png" alt="Logo">
+                        <p>Website Resmi Pemerintah Desa Sepadu, Kecamatan Semparuk, Kabupaten Sambas</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Pelayaran Sepadu</h4>
+                    <div class="contact-info">
+                        <p><strong>Jalan</strong>: Jalan Dusun Seladu Rt.002 - Rw.001, Desa Sepadu, Kecamatan Semparuk, Kabupaten Sambas, Provinsi Kalimantan Barat, Indonesia, 79457.</p>
+                        <p><strong>Email</strong>: sepadusemparuk@gmail.com</p>
+                        <p><strong>Telepon</strong>: 083127246351</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Copyright © 2026 Pemrintah. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Furwadi</a>
+                    <a href="#">2026</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
